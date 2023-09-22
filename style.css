@@ -1,0 +1,490 @@
+
+@font-face {
+    font-family: 'coldiac_freeregular';
+    src: url('polices/coldiac-webfont.woff2') format('woff2'),
+         url('polices/coldiac-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'prestageregular';
+    src: url('polices/prestage_regular-webfont.woff2') format('woff2'),
+         url('polices/prestage_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body h1, h2, h3, h5 {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2 {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-family: 'coldiac_freeregular';
+    letter-spacing: -1px;
+    cursor: default;
+}
+
+h3 {
+    font-size: 12px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: lighter;
+}
+
+#entete {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    overflow: hidden;
+}
+
+#entete h3:hover::after {
+    content: '      \00279A ';
+}
+
+#entete2 {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#entete2 h3:hover::before {
+    content: ' \00279A      ';
+}
+
+header {
+    text-align: center;
+}
+
+#pied {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    overflow: hidden;
+}
+
+#pied h3:hover::after {
+    content: '     \00279A ';
+}
+
+#pied2 #r1 {
+    position: absolute;
+    right: 25px;
+    bottom: 70px;
+}
+
+#pied2 #r2 {
+    position: absolute;
+    right: 25px;
+    bottom: 40px;
+}
+
+#pied2 #r3 {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+
+#pied2 #r4 {
+    position: absolute;
+    right: 25px;
+    bottom: 55px;
+}
+
+
+#pied2 h3:hover::before {
+    content: '\00279A       ';
+}
+
+
+header h1 {
+    margin-top: 150px;
+    font-family: 'prestageregular';
+    letter-spacing: 4px;
+    font-size: 55px;
+    cursor: default;
+}
+
+header h2 {
+    transform: rotate(-90deg);
+    width: 300px;
+    margin: 140px auto;
+}
+
+#hello {
+    position: absolute;
+    top: 25%;
+    left: 25px;
+    font-size: 74px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    cursor: default;
+}
+
+#hello #h1, #h2, #h3, #h4 {
+    margin-left: -400px;
+}
+
+#hello #h1:hover::after {
+    content: ' how are you ?';
+    font-weight: lighter;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#hello #h2:hover::after {
+    content: ' comment \0000E7 a va ?';
+    font-weight: lighter;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#hello #h3:hover::after {
+    content: " \0003A0\0003A9 \0003A3  \0003A0AE\000399 ;";
+    font-weight: lighter;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#hello #h4:hover::after {
+    content: ' hoe gaat het ?';
+    font-weight: lighter;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nom {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    cursor: default;
+    overflow: hidden;
+}
+
+#metier {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    overflow: hidden;
+    cursor: default;
+    z-index: -99;
+}
+
+#metier h3 {
+    cursor: default;
+}
+
+#presentation {
+    position: absolute;
+    top: 25%;
+    right: 25px;
+    font-size: 35px;
+    font-family: 'coldiac_freeregular';
+    letter-spacing: 1px;
+    cursor: default;
+}
+
+
+#close {
+    overflow: hidden;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    z-index: -99;
+}
+
+#close h3:hover::after {
+    content: '     \00279A ';
+}
+
+.n {
+    overflow: hidden;
+}
+
+.p {
+    overflow: hidden;
+}
+
+
+.modesombre {
+    background-color: rgb(32, 32, 32);
+    color: #b8bdc4;
+}
+
+#closework {
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: -99;
+}
+
+#closework h3:hover::before {
+    content: '\00279A       ';
+}
+
+#numero {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    font-family: 'prestageregular';
+    overflow: hidden;
+    cursor: default;
+    display: flex;
+}
+
+#numero .num {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#image {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+#image .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8 {
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 190px;
+    width: 53px;
+    cursor: default;
+}
+
+#image .img1 img, .img2 img, .img3 img, .img4 img, .img5 img, .img6 img, .img7 img, .img8 img {
+    height: 190px;
+    width: 48px;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: all 0.5s linear;
+    display: none;
+}
+
+#im2 {
+    object-position: right;
+}
+
+#img3 {
+    object-position: top;
+}
+
+#image .img1 img:hover,
+#image .img2 img:hover,
+#image .img3 img:hover,
+#image .img4 img:hover,
+#image .img5 img:hover,
+#image .img6 img:hover,
+#image .img7 img:hover,
+#image .img8 img:hover {
+    filter: grayscale(0) saturate(1.5) brightness(1);
+}
+
+#metierwork {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    overflow: hidden;
+    cursor: default;
+    z-index: -99;
+}
+
+#metierwork h3 {
+    cursor: default;
+}
+
+#closeimage {
+    position: absolute;
+    right: 30%;
+    bottom: 100px;
+    overflow: hidden;
+}
+
+#explore {
+    position: absolute;
+    left: 30%;
+    bottom: 100px;
+    overflow: hidden;
+}
+
+#closeimage:hover {
+    text-decoration: underline;
+}
+
+#explore h3:hover {
+    text-decoration: underline;
+}
+
+#loader h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 30%;
+    font-family: 'prestageregular';
+    cursor: default;
+}
+
+#border {
+    border: 1px solid;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 40%;
+    width: 350px;
+}
+
+#head h1 {
+    margin-top: 150px;
+    font-family: 'prestageregular';
+    letter-spacing: 4px;
+    font-size: 15px;
+    cursor: default;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#piedportable {
+    position: absolute;
+    bottom: -42%;
+    left: 25px;
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+
+#piedportable h3:hover::after {
+    content: '     \00279A ';
+}
+
+#pied2portable {
+    position: absolute;
+    bottom: -38.5%;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#pied2portable #r4, #r2, #r1, #r3 {
+    margin-top: 1px;
+}
+
+#pied2portable h3:hover::before {
+    content: '\00279A       '; 
+}
+
+#hello2 {
+    position: absolute;
+    top: 38%;
+    left: 25px;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    cursor: default;
+}
+
+#nom2 {
+    position: absolute;
+    bottom: -42%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    cursor: default;
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+
+#presentation2 {
+    position: absolute;
+    top: 15%;
+    right: 25px;
+    font-size: 15px;
+    font-family: 'coldiac_freeregular';
+    font-weight: normal;
+    letter-spacing: 1px;
+    cursor: default;
+}
+
+#imageportable {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+#imageportable .img11, .img22, .img33, .img44, .img55, .img66, .img77, .img88 {
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 190px;
+    width: 25px;
+    cursor: default;
+}
+
+#imageportable .img11 img, .img22 img, .img33 img, .img44 img, .img55 img, .img66 img, .img77 img, .img88 img {
+    height: 190px;
+    width: 25px;
+    object-fit: cover;
+    filter: saturate(1.5) brightness(1);
+    transition: all 0.5s linear;
+}
+
+h4 {
+    opacity: 0.5;
+    font-size: 10px;
+    cursor: pointer;
+    font-family: 'coldiac_freeregular';
+    position: absolute;
+    bottom: 22%;
+    right: 25px;
+    cursor: default;
+}
+
+#portable {
+    display: none;
+}
+
+#container {
+    display: none;
+}
+
+#loader {
+    display: none;
+}
